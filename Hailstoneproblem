@@ -1,0 +1,20 @@
+# Hailstonetrial9
+# initialize variable to store the number of interations called runNum
+runNum = 0
+print('Enter a number for a geometric count down to one:')
+# store user number in varaible called trialnum
+trialNum = int(input('Enter any number:'))
+    
+while (trialNum != 1):
+    if (trialNum % 2 == 0):
+        trialNum = int(int(trialNum) / 2) 
+        print(trialNum) 
+        runNum = str(int(runNum) + 1)
+    else:
+        trialNum = int(int(trialNum * 3)+ 1)
+        print(trialNum)
+        runNum = str(int(runNum) + 1)
+while (trialNum < 1):
+    break
+
+print( "The devisiveness is over! "  + runNum + " steps to get to one.")
